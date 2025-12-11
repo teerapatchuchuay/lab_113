@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int total,a;
-    total =  7 / 8 ;
-    a =  5 / 2 ;
-    // printf("%d %f",total,a);
-    printf("%d",012+123);
+    int ch = 2;
+    switch (ch) {
+        case 1 : printf("o");
+                 break;
+        case 2 : printf("t");
+        case 3 : printf("w");
+        default : printf("f");
+    }
 }
