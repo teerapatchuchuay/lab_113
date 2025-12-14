@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 int main(){
-    int ch = 2;
-    switch (ch) {
-        case 1 : printf("o");
-                 break;
-        case 2 : printf("t");
-        case 3 : printf("w");
-        default : printf("f");
+    int i = 0;
+    while (i < 12){
+        i++;
+        printf("12 x %d = %d\n",i,i*12);
     }
+    
 }
