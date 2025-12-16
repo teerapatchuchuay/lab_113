@@ -7,8 +7,9 @@ int main(){
 
     fgets(n,100,stdin);
     ni = atoi(n);
-    if (ni <= 0 || ni >= 26){
+    if (ni <= 0 || ni > 26){
         printf("-");
+        return 0;
     }
     chi = (int)ch;
     sti = (chi + ni) - 1;
@@ -16,12 +17,13 @@ int main(){
     for(char i = sti;i >= 'a'; i--){
         printf("%c",i);
         if (i != 'a'){
-            printf('=')
+            printf("-");
         }
     }
 
     stp = chi + 1;
-    for(char i = 'a'; i <= stp; i++){
+    for(char i = stp; i <= sti; i++){
+        printf("-");
         printf("%c",i);
     }
 

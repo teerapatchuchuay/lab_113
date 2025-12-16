@@ -32,9 +32,7 @@ int main() {
        printf("x * y = %5.4lf\n", x*y);
        break;
   case 'M':
-       (int)x;
-       (int)y;
-       printf("x mod y = %5.4lf\n",(int)x % (int)y);
+       printf("x mod y = %5.4lf\n",fmod(x,y));
        break;
   case 'd':
        printf("x / y = %5.4lf\n",x / y);
