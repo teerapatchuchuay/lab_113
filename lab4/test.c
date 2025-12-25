@@ -1,18 +1,14 @@
-#include <stdio.h>
+#include <stdio.h>  // ฟังก์ชัน printf() อยู่ใน Library stdio.h เป็นแบบ Arguments, no return value
 #include <stdlib.h>
-#include <math.h>
 
 int main(){
-    int a = 4 , x = 2 ,sum() , to;
-
-    if (a % 2 == 0){
-        to = sum(a,x);
-    }else{
-        to = 1;
-    }
-printf("%d",to);
+	int n = 5;
+	int result = add(n);
+	printf("result: %d\n",result);
 }
 
-int sum(int a,int b){
-    return a+b;
+int add(int n){
+	if (n==0) return 0;
+	int out =  n + add(n-1);
+	return out;
 }
